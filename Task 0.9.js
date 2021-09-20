@@ -5,7 +5,7 @@ function returnAllVowels(randomString)
 
     for(let i of randomString.toLowerCase())
     {
-        if(vowels.includes(i))
+        if(vowels.includes(i))  	
         {
             onlyVowels += i + ', ';
         }
@@ -19,3 +19,5 @@ function returnAllVowels(randomString)
 }
 
 returnAllVowels('The chUrch is on Thursday');
+
+

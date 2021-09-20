@@ -27,4 +27,3 @@ function numToTime(number)
 }
 
 console.log(numToTime(240));
-
