@@ -12,7 +12,7 @@ function numToTime(number)
         hours = hours + ' hour';
     }
 
-    if(minutes > 1)
+    if(minutes === 0 || minutes > 1)
     {
         minutes = minutes + ' minutes';
     }
@@ -26,5 +26,5 @@ function numToTime(number)
     return time;
 }
 
-console.log(numToTime(200));
+console.log(numToTime(240));
 

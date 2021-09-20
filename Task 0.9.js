@@ -3,7 +3,7 @@ function returnAllVowels(randomString)
     var onlyVowels = '';
     let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 
-    for(let i of randomString)
+    for(let i of randomString.toLowerCase())
     {
         if(vowels.includes(i))
         {
@@ -11,9 +11,11 @@ function returnAllVowels(randomString)
         }
     }
 
-    return onlyVowels;
+    onlyVowels = Array.from(new Set(onlyVowels.split(', '))).toString();
+
+    console.log(onlyVowels);
 
 
 }
 
-console.log(returnAllVowels('The chUrch is on Thursday'));
+returnAllVowels('The chUrch is on Thursday');
