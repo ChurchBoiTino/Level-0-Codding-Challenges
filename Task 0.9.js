@@ -8,14 +8,17 @@ function returnAllVowels(randomString)
         if(vowels.includes(i))
         {
             onlyVowels += i + ', ';
+            
         }
     }
 
     onlyVowels = Array.from(new Set(onlyVowels.split(', '))).toString();
 
-    return onlyVowels;
+    onlyStrVowels = onlyVowels.substring(0, onlyVowels.length - 1);
+
+    console.log(onlyStrVowels);
 
 
 }
 
-console.log(returnAllVowels('The chUrch is on Thursday'));
+returnAllVowels('The chUrch is on Thursday');
