@@ -1,23 +1,23 @@
-function numToTime(number)
-{
+function numToTime(number){
+
     var hours = Math.floor(number / 60);
     var minutes = number % 60;
 
-    if(hours > 1)
-    {
+    if(hours > 1){
+
         hours = hours + ' hours';
     }
-    else
-    {
+    else{
+
         hours = hours + ' hour';
     }
 
-    if(minutes === 0 || minutes > 1)
-    {
+    if(minutes === 0 || minutes > 1){
+
         minutes = minutes + ' minutes';
     }
-    else
-    {
+    else{
+        
         minutes = minutes + ' minute';
     }
 

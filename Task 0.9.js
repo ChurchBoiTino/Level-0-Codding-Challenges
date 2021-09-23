@@ -1,12 +1,12 @@
-function returnAllVowels(randomString)
-{
+function returnAllVowels(randomString){
+
     var onlyVowels = '';
     let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 
-    for(let i of randomString.toLowerCase())
-    {
-        if(vowels.includes(i))
-        {
+    for(let i of randomString.toLowerCase()){
+
+        if(vowels.includes(i)){
+
             onlyVowels += i + ', ';
             
         }
@@ -16,7 +16,7 @@ function returnAllVowels(randomString)
 
     onlyStrVowels = onlyVowels.substring(0, onlyVowels.length - 1);
 
-    console.log(onlyStrVowels);
+    console.log('Vowels: ' + onlyStrVowels);
 
 
 }

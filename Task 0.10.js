@@ -1,17 +1,20 @@
-function commonCharacters(str1, str2)
-{
+function commonCharacters(str1, str2){
+
     let splitstr = str1.split('');
     commonChars = '';
 
-    for(let i of str2)
-    {
-        if(splitstr.includes(i))
-        {
+    for(let i of str2){
+
+        if(splitstr.includes(i)){
+
             commonChars += i + ', ';
         }
     }
 
-    return 'Common characters: ' + commonChars;
+    commonChar = commonChars.substring(0, commonChars.length - 2);
+
+    return 'Common letters: ' + commonChar;
 }
 
-console.log(commonCharacters('Tsakani', 'Tevin'));
+console.log(commonCharacters('Tsakaniv', 'Tevinv'));
+
