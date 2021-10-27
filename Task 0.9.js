@@ -1,6 +1,6 @@
 function returnAllVowels(randomString){
 
-    var onlyVowels = '';
+    let onlyVowels = '';
     let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 
     for(let i of randomString.toLowerCase()){

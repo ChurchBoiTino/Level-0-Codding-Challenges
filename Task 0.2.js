@@ -1,6 +1,6 @@
-var x, y, z, a, b;
-var i = 1;
-var j = 2;
+let x, y, z, a, b;
+let i = 1;
+let j = 2;
 
 x = i + i * j;
 y = (i + i) * j;
