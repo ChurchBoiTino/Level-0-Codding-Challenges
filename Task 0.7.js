@@ -1,11 +1,11 @@
 function celsiusToFarenheit(degrees){
-    let celsius = (9/5) * degrees + 32;
+    const celsius = (9/5) * degrees + 32;
 
     return celsius;
 }
 
-function farenheitToCelsius(farenheit){
-    let farenheit = (5/9) * (farenheit - 32);
+function farenheitToCelsius(degrees){
+    const farenheit = (5/9) * (degrees - 32);
 
     return farenheit;
 }

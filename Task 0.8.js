@@ -1,9 +1,9 @@
 function numToTime(number){
 
-    let hours = Math.floor(number / 60);
-    let minutes = number % 60;
+     hours = Math.floor(number / 60);
+     minutes = number % 60;
 
-    if(hours > 1){
+    if(hours > 1 || hours === 0){
 
         hours = hours + ' hours';
     }
@@ -21,9 +21,9 @@ function numToTime(number){
         minutes = minutes + ' minute';
     }
 
-    let time = hours + ' and ' + minutes;
+    const time = hours + ' and ' + minutes;
 
     return time;
 }
 
-console.log(numToTime(240));
+console.log(numToTime(61));

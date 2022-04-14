@@ -11,7 +11,7 @@ function commonCharacters(str1, str2){
         }
     }
 
-    commonChar = commonChars.substring(0, commonChars.length - 2);
+    const commonChar = commonChars.substring(0, commonChars.length - 2);
 
     return 'Common letters: ' + commonChar;
 }
